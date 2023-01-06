@@ -11,6 +11,12 @@ app.post('/upload-torrent', (req, res) => {
   // Créer un nouveau flux à partir du fichier torrent
   const stream = torrentStream(torrentFile);
 
+const castApp = Chromecast.Application({
+  appId: 'XXXXXXXX',
+  appType: ['web']
+});
+
+
   // Attendre que le flux soit prêt et récupérer les informations sur la première vidéo
   stream.on('ready', () => {
     const file = stream.files[0];
