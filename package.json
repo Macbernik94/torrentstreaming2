@@ -1,0 +1,18 @@
+{
+  "name": "torrentstreaming",
+  "version": "1.0.0",
+  "description": "Une interface web pour visionner des vidéos torrent en streaming",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "JD",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-chromecast": "^0.0.5-alpha",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3"
+  }
+}
